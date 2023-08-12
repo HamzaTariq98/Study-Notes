@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageAI Model Results</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+
+</head>
+<body>
+    <header>
+        <h1>ImageAI Model Results</h1>
+    </header>
+    <br>
+    
+    <button onclick="window.location.href = '/';">Go to main page</button>
+
+    <main>
+        <section class="upload-section" method = "post">
+            <h2>Upload Pictures in jpg format only</h2>
+            <form id="upload-form">
+                <input type="file" id="image-input" multiple accept="image/*">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section class="results-section">
+            <h2>Model Results</h2>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="static/script.js"></script>
+</body>
+</html>

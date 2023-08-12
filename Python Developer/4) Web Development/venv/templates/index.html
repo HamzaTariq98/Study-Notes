@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Form</title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+</head>
+<body>
+    <br>
+    
+    <button onclick="window.location.href = 'upload_files.html';">Upload Files</button>
+
+    <h1>Contact Us</h1>
+    <form action="process_email" method="post">
+        <label for="email">Email:</label><br>
+        <input id="email" name="email" ><br><br>
+        
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" ><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" cols="60" placeholder="enter a message"></textarea><br><br>
+        
+        <input type="submit" value="Send Email">
+    </form>
+
+
+</body>
+</html>
