@@ -47,18 +47,17 @@ def unstack_columns(df):
 
     return new_df
 
-
+# Set up the model
 current_path =  os.path.dirname(sys.argv[0])# Finding current path of script
 os.chdir(current_path) # change cwd for desired path as in VScode cwd in desktop
 execution_path = os.getcwd()
-
 prediction = ImageClassification()
-prediction.setModelTypeAsResNet50()
-prediction.setModelPath(os.path.join(execution_path, "resnet50-19c8e357.pth"))
+prediction.setModelTypeAsMobileNetV2()
+prediction.setModelPath(os.path.join(execution_path, "mobilenet_v2-b0353104.pth"))
 prediction.loadModel()
-
-
 prediction_list = []
+
+
 
 files = list_files_in_directory(os.path.join(execution_path, "Images"))
 
@@ -68,4 +67,3 @@ for file_name in files:
 prediction_list = unstack_columns(pd.DataFrame(prediction_list))
 
 print(prediction_list)
-
