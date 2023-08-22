@@ -1,3 +1,4 @@
+import pdb
 class MyArr():
 
     def __init__(self):
@@ -22,8 +23,22 @@ class MyArr():
         del self.data[self.length - 1]
         self.length += -1
 
+    # Insert element in cetrain index O(n)
+    def insert(self, value, index):
+        assert 0 <= index <= self.length, f'index {index} out of range 0-{self.length}' # Raise err if insertion index is out of range
+        if index == self.length:
+            self.append(value)
+        else:
+            for ind in range(self.length,index,-1):
+                self.data[ind] = self.data[ind-1]
+
+        self.data[index] = value
+        self.length += 1
+
 arr = MyArr()
-arr.append('a')
-arr.append('b')
+
+arr.append('asdasdb')
 arr.append('c')
-print(arr)
+arr.insert('a',0)
+print(arr.get(2))
+print(arr) # ['a', 'asdasdb', 'c']
