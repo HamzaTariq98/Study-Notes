@@ -1,4 +1,3 @@
-import pdb
 class MyArr():
 
     def __init__(self):
@@ -37,8 +36,10 @@ class MyArr():
 
 arr = MyArr()
 
-arr.append('asdasdb')
+arr.append('b')
 arr.append('c')
 arr.insert('a',0)
-print(arr.get(2))
-print(arr) # ['a', 'asdasdb', 'c']
+print(arr.get(0)) # a
+print(arr.get(1)) # b
+print(arr.get(2)) # c
+print(arr) # ['a', 'b', 'c']
