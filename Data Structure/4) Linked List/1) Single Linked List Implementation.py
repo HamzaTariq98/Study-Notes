@@ -92,7 +92,7 @@ class LinkedList():
         return nodes
 
 
-    def __str__(self):
+    def __repr__(self):
         return f'{self.nodes()}'
 
     def reverse(self):
