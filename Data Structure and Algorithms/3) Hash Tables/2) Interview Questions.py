@@ -23,6 +23,6 @@ def first_recurring(arr):  # O(n)
     return 'undefined'
 
 
-print(f'{arr1}: {first_recurring(arr1)}')
-print(f'{arr2}: {first_recurring(arr2)}')
-print(f'{arr3}: {first_recurring(arr3)}')
+print(f'{arr1}: {first_recurring(arr1)}') # [2, 5, 1, 2, 3, 5, 1, 2, 4]: 2
+print(f'{arr2}: {first_recurring(arr2)}') # [2, 1, 1, 2, 3, 5, 1, 2, 4]: 1
+print(f'{arr3}: {first_recurring(arr3)}') # [2, 3, 4, 5]: undefined

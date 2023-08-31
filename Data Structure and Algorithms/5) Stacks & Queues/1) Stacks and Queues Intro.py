@@ -1,5 +1,5 @@
 # Stacks ==> LIFO only can grap last item O(1) but lookup is O(n)
-# LIFO used when undo
+# LIFO used when undo/Recursion
 # Arrays/LinkedLists
 
 # Queues ==> FIFO enqueue,O(1) // dequeue,O(1)
