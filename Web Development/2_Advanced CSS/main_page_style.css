@@ -1,0 +1,54 @@
+/* ################ Defaults ################ */
+
+nav,
+header,
+footer{
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+/* ################ Nav bar ################ */
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: #2c62387a;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+    
+}
+
+ul.topnav li.right{
+    float: right;
+}
+
+ul.topnav li a{
+    color: #2c6238;
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+    min-height: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul.topnav li a:hover{
+    background-color: #2c6238d8;
+    color: #ffffffa2;
+    text-decoration: none;
+    display: block;
+}
