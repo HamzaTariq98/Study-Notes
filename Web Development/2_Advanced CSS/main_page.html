@@ -4,23 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main_page_style.css">
-    <title>Book Shop</title>
+    <title>Apples</title>
 </head>
 <body>
     
     <div>
         <nav>
-            <ul class="topnav">
-                <!-- <img src="/1_Basic HTML-CSS/symbols/2.png" style="width: 100px;" > -->
+            <ul class="topnav" id="dropdownClick">
                 <li><a href="../index.html">To Main page</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
+                <li class="hiddenElements"><a href="#apples-types">Apples</a></li>
+                <li class="hiddenElements"><a href="#footer ">About</a></li>
                 <li class="right"><a href="#signup">Sign Up</a></li>
                 <li class="right"><a href="#signin">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
             </ul>
         </nav>
+
+
     </div>
+
+    <div id="plantApple">
+
+        <table
+        border="0",
+        cellspacing = "5px">
+            <tr>
+                <td>
+                    <div class="sub-item">
+                        <div>
+                            <h1>How to plant a tree</h1>
+                        </div>
+                        <form action="#asdasd">
+                            <p>Username: </p>
+                            <input type="text" name="username">
+                            <p>Password: </p>
+                            <input type="password" name="pass" id="pass">
+                        </form>
+                    </div>
+                </td>
+                <td>
+                    <div class="sub-item">
+                        <div id="iframe">
+                            <iframe width="453.6" height="255.15" class="video" src="https://www.youtube.com/embed/QYmgrw0PgLU?si=3yjpByQx1-cWQnTG&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="apples-types">
+        <header><h1>Apples Types</h1></header>
+        <div class="apples-types">
+            <div class="row">
+                    <div class="col-4">
+                        <div class="box">
+                            <h2>Gala Apple</h2>
+                            <img src="./apples/Gala.png" alt="Gala Apple">
+                            <p>(GPT-generated) Gala apples, originating from New Zealand, are a crisp and sweet variety known for their vibrant red and yellow skin. They offer a perfect balance of sweetness and tartness, making them a popular choice for snacking and fresh salads. Gala apples are enjoyed worldwide for their delightful flavor and crisp texture.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="box">
+                            <h2>Golden Delicious</h2>
+                            <img src="./apples/Golden Delicious.png" alt="Golden Delicious">
+                            <p>(GPT-generated) Golden Delicious apples are a classic apple variety characterized by their golden-yellow skin and sweet, mellow taste. Originating in West Virginia, USA, they're prized for their versatility. These apples are great for eating fresh, baking into pies, or making applesauce. Their crisp, juicy flesh and honeyed flavor are iconic.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="box">
+                            <h2>Granny Smith</h2>
+                            <img src="./apples/Granny Smith.png" alt="Granny Smith">
+                            <p>(GPT-generated) Granny Smith apples, with their bright green skin, offer a tangy and refreshing flavor. Originally from Australia, they're known for their crisp texture and tart taste. Ideal for snacking, baking, and salads, these apples add a zesty kick to both sweet and savory dishes, making them a versatile choice.</p>
+                        </div>
+                     </div>
+            </div>
+        </div>
+        <a href="https://en.wikipedia.org/wiki/Apple" target="_blank"><button class="apples-types">More Apples</button></a>
+
+    </div>
+    <hr>
+    <footer id="footer">
+        <div class="row">
+            <div class="col-2">
+                <ul>
+                    <h3>Apples</h3>
+                    <li><a href="https://www.orangepippin.com/varieties/apples/gala" target="_blank">Red</a></li>
+                    <li><a href="https://www.applesfromny.com/varieties/golden-delicious/" target="_blank">Yellow</a></li>
+                    <li><a href="https://resources.markon.com/produce-guide/apples-granny-smith" target="_blank">Green</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul>
+                    <h3 class="hidden"> .</h3>
+                    <li><a href="" onclick="return false;">About</a></li>
+                    <li><a href="" onclick="return false;">Carrer</a></li>
+                    <li><a href="" onclick="return false;">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul>
+                    <h3 class="hidden"> .</h3>
+                    <li><a href="mailto:hamzatarq98@gmail.com">Contact us</a></li>
+                    <li><a href="#">Back to top</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        function dropdownMenu(){
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+            // change topnav to topvan.responsive 
+            
+            }
+            
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
