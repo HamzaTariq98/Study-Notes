@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Learning JS</title>
-</head>
-<body>
-    <a href="/index.html">Back to main</a>
-    <br><br><br><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <a href="../index.html"
+      ><button>
+        Back to main <br /><img
+          src="home.png"
+          alt="home"
+          style="height: 30px"
+        /></button
+    ></a>
+    <br /><br /><br /><br />
 
-    <div class="container">
-        <form id="calculator-form">
-            <div class="row">
-                <div class="col-3" id="result">Display</div>
-            </div>
-            <div class="row">
-                <div class="col-1"><button value="1">1</button></div>
-                <div class="col-1"><button value="2">2</button></div>
-                <div class="col-1"><button value="3">3</button></div>
-                <div class="col-1"><button value="+">+</button></div>
-                <div class="col-1"><button value="C">C</button></div>
-            
-            </div>
-            <div class="row">
-                <div class="col-1"><button value="4">4</button></div>
-                <div class="col-1"><button value="5">5</button></div>
-                <div class="col-1"><button value="6">6</button></div>
-                <div class="col-1"><button value="-">-</button></div>
-                <div class="col-1"><button value="*">*</button></div>
-            
-            </div>
-            <div class="row">
-                <div class="col-1"><button value="7">7</button></div>
-                <div class="col-1"><button value="8">8</button></div>
-                <div class="col-1"><button value="9">9</button></div>
-                <div class="col-1"><button value="/">/</button></div>
-                <div class="col-1"><button value="%">%</button></div>
-                
-            </div>
-            <div class="row">
-                <div class="col-1"><button value="del">&#x232B;</button></div>
-                <div class="col-1"><button value="0">0</button></div>
-                <div class="col-1"><button value=".">.</button></div>
-                <div class="col-1"><button value="(">(</button></div>
-                <div class="col-1"><button value=")">)</button></div>
-            </div>
-            <div class="row">
-                <div class="col-3"><button value="=" class="equal">=</button></div>
-            </div>
-        </form>
+    <div class="container" id="container">
+      <div class="row">
+        <div class="col-3" id="result">Display</div>
+      </div>
+      <div class="row">
+        <div class="col-1"><button value="1">1</button></div>
+        <div class="col-1"><button value="2">2</button></div>
+        <div class="col-1"><button value="3">3</button></div>
+        <div class="col-1"><button value="+">+</button></div>
+        <div class="col-1"><button value="C">C</button></div>
+      </div>
+      <div class="row">
+        <div class="col-1"><button value="4">4</button></div>
+        <div class="col-1"><button value="5">5</button></div>
+        <div class="col-1"><button value="6">6</button></div>
+        <div class="col-1"><button value="-">-</button></div>
+        <div class="col-1"><button value="*">*</button></div>
+      </div>
+      <div class="row">
+        <div class="col-1"><button value="7">7</button></div>
+        <div class="col-1"><button value="8">8</button></div>
+        <div class="col-1"><button value="9">9</button></div>
+        <div class="col-1"><button value="/">/</button></div>
+        <div class="col-1"><button value="%">%</button></div>
+      </div>
+      <div class="row">
+        <div class="col-1"><button value="del">&#x232B;</button></div>
+        <div class="col-1"><button value="0">0</button></div>
+        <div class="col-1"><button value=".">.</button></div>
+        <div class="col-1"><button value="(">(</button></div>
+        <div class="col-1"><button value=")">)</button></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><button value="=" class="equal">=</button></div>
+      </div>
     </div>
 
     <script src="scrip.js"></script>
-</body>
+  </body>
 </html>

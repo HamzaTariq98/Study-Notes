@@ -117,7 +117,7 @@
     
 // })
 
-var form = document.getElementById('calculator-form')
+var form = document.getElementById('container')
 var result = document.getElementById('result')
 
 // Predefined using ChatGPT
@@ -138,7 +138,6 @@ console.log(buttons.forEach(function(button){
     button.addEventListener('click', function(){
         var _value = button.value
         if (result.innerText === "-Infinity" || /^[^\d\+\-\(\)]/.test(result.innerText)){ //Regular expression predefined by ChatGPT
-            console.log('i am heter')
             result.innerText = []
         }
         if (_value === 'C'){
@@ -157,6 +156,6 @@ console.log(buttons.forEach(function(button){
     })
 }))
 
-form.addEventListener('submit',function(event){
-    event.preventDefault()
-})
+// form.addEventListener('submit',function(event){
+//     event.preventDefault()
+// })

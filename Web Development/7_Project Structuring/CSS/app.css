@@ -1,0 +1,48 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #8781ff; }
+
+#header {
+  padding: 20px;
+  width: 100%; }
+
+#footer {
+  color: white;
+  background-color: grey; }
+
+.container {
+  padding: 10px; }
+
+.btn, .btn-lg, .btn-sm {
+  padding: 20px;
+  border-radius: 2px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 100%; }
+
+.btn-lg {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: green;
+  color: white; }
+
+.btn-sm {
+  padding: 5px;
+  border-radius: 3.3333333333px;
+  background-color: cyan;
+  color: black; }
+
+.warning {
+  background-color: rgba(255, 0, 0, 0.58); }
+
+.okay {
+  background-color: blue; }
+
+.main-nav {
+  background-color: grey;
+  border: 2px black solid; }
+
+/*# sourceMappingURL=app.css.map */
