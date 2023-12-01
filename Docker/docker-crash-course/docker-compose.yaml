@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./API
+    container_name: api_c
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./API:/app
+      - /app/node_modules
+
+  frontend:
+    build: ./front-end
+    container_name: frontend_c
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front-end:/frontEnd
+      - /frontEnd/node_modules
+    
