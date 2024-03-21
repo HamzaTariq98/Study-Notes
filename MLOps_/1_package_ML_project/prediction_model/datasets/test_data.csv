@@ -1,0 +1,2 @@
+pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alone
+1,female,38,1,0,71.2833,C,First,woman,False,C,Cherbourg,False

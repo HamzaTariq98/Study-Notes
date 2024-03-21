@@ -1,0 +1,7 @@
+artifact_location: file:///home/hamza/Desktop/MLOps/2_Ml_flow/mlruns/373750593914828043
+creation_time: 1710988313682
+experiment_id: '373750593914828043'
+last_update_time: 1710988337987
+lifecycle_stage: deleted
+name: linear_model
+tags: {}
