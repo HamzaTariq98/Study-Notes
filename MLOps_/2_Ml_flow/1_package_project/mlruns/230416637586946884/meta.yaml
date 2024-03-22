@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/230416637586946884
+creation_time: 1710995615045
+experiment_id: '230416637586946884'
+last_update_time: 1710995615045
+lifecycle_stage: active
+name: linear_model

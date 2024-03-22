@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/230416637586946884/515c3a16c7fe46c89df7412f1131620b/artifacts
+end_time: 1711008140603
+entry_point_name: ''
+experiment_id: '230416637586946884'
+lifecycle_stage: active
+run_id: 515c3a16c7fe46c89df7412f1131620b
+run_name: serious-grub-713
+run_uuid: 515c3a16c7fe46c89df7412f1131620b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711008084799
+status: 3
+tags: []
+user_id: hamza

@@ -66,7 +66,9 @@ pip install mlflow
 - Serve the Models with Local REST server
 `mlflow models serve -m runs:/<RUN_ID>/model --port 9000`
 
-`mlflow models serve -m /Users/nachiketh/Desktop/author-repo/Complete-MLOps-BootCamp/MLFlow-Manage-ML-Experiments/mlruns/636758781795674813/91ef1ea3f63d40a7a33c4251dd088618/artifacts/RandomForestClassifier --port 9000`
+
+mlflow models serve -m runs:/5c07cba0742943ada5de639ea9547233/my_model --port 9000
+
 
 
 # Generate Predictions
@@ -160,7 +162,9 @@ LogisticRegression/
 - port 5000
 `mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri mysql://root:admin123@localhost/db_mlflow --default-artifact-root $PWD/mlruns`
 
-`export MLFLOW_TRACKING_URI=http://0.0.0.0:5001`
+
+
+`export MLFLOW_TRACKING_URI=http://0.0.0.0:5001`  # => inorder to be able to use mlflow project connected to a mysql db
 
 `mlflow models serve -m "models:/Prediction_Model_RF/Production" -p 1234`
 

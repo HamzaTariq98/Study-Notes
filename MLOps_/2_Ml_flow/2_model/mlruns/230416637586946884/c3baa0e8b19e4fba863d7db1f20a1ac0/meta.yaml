@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/230416637586946884/c3baa0e8b19e4fba863d7db1f20a1ac0/artifacts
+end_time: 1711009695963
+entry_point_name: ''
+experiment_id: '230416637586946884'
+lifecycle_stage: active
+run_id: c3baa0e8b19e4fba863d7db1f20a1ac0
+run_name: 2024-21-11-28m-13sLinearRegression
+run_uuid: c3baa0e8b19e4fba863d7db1f20a1ac0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711009693626
+status: 3
+tags: []
+user_id: hamza

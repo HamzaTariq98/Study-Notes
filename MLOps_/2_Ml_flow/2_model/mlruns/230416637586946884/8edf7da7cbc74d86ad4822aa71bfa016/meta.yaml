@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/230416637586946884/8edf7da7cbc74d86ad4822aa71bfa016/artifacts
+end_time: 1711007794343
+entry_point_name: ''
+experiment_id: '230416637586946884'
+lifecycle_stage: active
+run_id: 8edf7da7cbc74d86ad4822aa71bfa016
+run_name: blushing-newt-843
+run_uuid: 8edf7da7cbc74d86ad4822aa71bfa016
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711007787123
+status: 3
+tags: []
+user_id: hamza

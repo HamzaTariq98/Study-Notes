@@ -1,0 +1,16 @@
+artifact_uri: file:///home/hamza/Desktop/MLOps/2_Ml_flow/mlruns/373750593914828043/f44ca00a9529466d81c0c7e365ae8c0e/artifacts
+deleted_time: 1710988337987
+end_time: 1710988317453
+entry_point_name: ''
+experiment_id: '373750593914828043'
+lifecycle_stage: deleted
+run_id: f44ca00a9529466d81c0c7e365ae8c0e
+run_name: big-penguin-538
+run_uuid: f44ca00a9529466d81c0c7e365ae8c0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710988313731
+status: 4
+tags: []
+user_id: hamza

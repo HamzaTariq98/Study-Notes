@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/230416637586946884/6d2f6f3f36da413f804987dba2ee5358/artifacts
+deleted_time: 1710996334104
+end_time: 1710995786353
+entry_point_name: ''
+experiment_id: '230416637586946884'
+lifecycle_stage: deleted
+run_id: 6d2f6f3f36da413f804987dba2ee5358
+run_name: 2024-21-7-36m-25sDecisionTreeRegressor
+run_uuid: 6d2f6f3f36da413f804987dba2ee5358
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710995786000
+status: 4
+tags: []
+user_id: hamza
