@@ -1,0 +1,8 @@
+name: testtt
+
+docker_env:
+  image: hamzanaser/mlflow:v1
+
+entry_points:
+  main:
+    command: "python app.py"

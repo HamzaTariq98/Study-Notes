@@ -156,15 +156,16 @@ LogisticRegression/
 - Installation
 `pip install mysqlclient`
 
--port 5001
-`mlflow server --host 0.0.0.0 --port 5001 --backend-store-uri mysql://root:admin123@localhost/db_mlflow --default-artifact-root $PWD/mlruns`
 
 - port 5000
-`mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri mysql://root:admin123@localhost/db_mlflow --default-artifact-root $PWD/mlruns`
+
+`mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri mysql+pymysql://root:**@localhost/db_mlflow --default-artifact-root $PWD/mlruns`
 
 
 
-`export MLFLOW_TRACKING_URI=http://0.0.0.0:5001`  # => inorder to be able to use mlflow project connected to a mysql db
+`export MLFLOW_TRACKING_URI=http://0.0.0.0:5000`  # => inorder to be able to use mlflow project connected to a mysql db
 
 `mlflow models serve -m "models:/Prediction_Model_RF/Production" -p 1234`
+
+http://127.0.0.1:1234/invocations
 
