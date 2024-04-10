@@ -1,0 +1,15 @@
+artifact_uri: file:///home/hamza/Desktop/Study-Notes/MLOps_/3_Docker/2_mlflow/mlruns/0/be5a56e6b49f4c7ba5cb6aadfbf61424/artifacts
+end_time: 1711786088148
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: be5a56e6b49f4c7ba5cb6aadfbf61424
+run_name: capricious-midge-63
+run_uuid: be5a56e6b49f4c7ba5cb6aadfbf61424
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711786082903
+status: 3
+tags: []
+user_id: hamza

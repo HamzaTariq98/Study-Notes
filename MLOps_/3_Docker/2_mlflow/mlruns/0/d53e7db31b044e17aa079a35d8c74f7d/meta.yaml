@@ -1,0 +1,15 @@
+artifact_uri: file:///home/hamza/Desktop/Study-Notes/MLOps_/3_Docker/2_mlflow/mlruns/0/d53e7db31b044e17aa079a35d8c74f7d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d53e7db31b044e17aa079a35d8c74f7d
+run_name: unequaled-bass-967
+run_uuid: d53e7db31b044e17aa079a35d8c74f7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711785703764
+status: 1
+tags: []
+user_id: hamza

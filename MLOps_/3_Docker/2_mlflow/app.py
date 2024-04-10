@@ -4,7 +4,7 @@ from sklearn.metrics import mean_absolute_error
 import mlflow
 import pandas as pd
 import mlflow.sklearn
-import openpyxl
+print(f"pandas vesrion is : {pd.__version__}")
 
 model = LinearRegression()
 

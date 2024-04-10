@@ -1,0 +1,15 @@
+artifact_uri: file:///home/hamza/Desktop/Study-Notes/MLOps_/3_Docker/2_mlflow/mlruns/0/7d851faec9794c9baf683401d77703ca/artifacts
+end_time: 1711786113266
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7d851faec9794c9baf683401d77703ca
+run_name: calm-rat-283
+run_uuid: 7d851faec9794c9baf683401d77703ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711786107810
+status: 3
+tags: []
+user_id: hamza

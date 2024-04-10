@@ -1,0 +1,15 @@
+artifact_uri: file:///home/hamza/Desktop/Study-Notes/MLOps_/3_Docker/2_mlflow/mlruns/0/e27eb63161274cc983b46e31cd01c62d/artifacts
+end_time: 1711786053521
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e27eb63161274cc983b46e31cd01c62d
+run_name: bemused-worm-557
+run_uuid: e27eb63161274cc983b46e31cd01c62d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711785970772
+status: 3
+tags: []
+user_id: hamza

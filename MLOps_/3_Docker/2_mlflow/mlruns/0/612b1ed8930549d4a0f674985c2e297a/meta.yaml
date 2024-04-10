@@ -1,0 +1,15 @@
+artifact_uri: file:///home/hamza/Desktop/Study-Notes/MLOps_/3_Docker/2_mlflow/mlruns/0/612b1ed8930549d4a0f674985c2e297a/artifacts
+end_time: 1711786565770
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 612b1ed8930549d4a0f674985c2e297a
+run_name: resilient-gull-844
+run_uuid: 612b1ed8930549d4a0f674985c2e297a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711786549209
+status: 3
+tags: []
+user_id: hamza
