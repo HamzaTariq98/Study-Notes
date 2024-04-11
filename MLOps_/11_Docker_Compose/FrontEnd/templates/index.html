@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href={{  url_for('static', filename='favicon.png')  }}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{  url_for('static', filename='styles.css')  }}>
+    <title>Front End</title>
+
+</head>
+<body>
+    <div>
+        <form action="add_value">
+            <header>Add Data for db</header>
+            <input type="submit" value="0" name="_0">
+            <input type="submit" value="1" name="_1">
+            <input type="submit" value="2" name="_2">
+            <input type="submit" value="3" name="_3">
+            <input type="submit" value="4" name="_4">
+            <input type="submit" value="5" name="_5">
+            <input type="submit" value="6" name="_6">
+            <input type="submit" value="7" name="_7">
+            <input type="submit" value="8" name="_8">
+            <input type="submit" value="9" name="_9">
+        </form>
+    </div>
+
+    <hr>
+
+    <div>
+        <header>DataBase</header>
+        {{ data }}
+    </div>
+</body>
+</html>
