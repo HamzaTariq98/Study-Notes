@@ -8,14 +8,14 @@ app = Flask(__name__)
 
 
 def add_number_to_db(number):
-    requests.get(f'http://localhost:5001/add_num?num={number}')
+    requests.get(f'http://backend:5001/add_num?num={number}')
     print(f'\nadding {number} to db\n')
 
 
 
 
 def call_database():
-    response = requests.get('http://localhost:5001/fetch_data')
+    response = requests.get('http://backend:5001/fetch_data')
     return response.json()
 
 
