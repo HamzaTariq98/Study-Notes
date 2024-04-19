@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-api
+  labels:
+    name: myapp
+spec:
+  containers:
+  - name: my-api
+    image: hamzanaser/api:latest
+    # image: nginx
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80

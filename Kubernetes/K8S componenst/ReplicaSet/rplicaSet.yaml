@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replica
+  labels:
+    app: potato
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: myapp-replicaset
+
+  template:
+    metadata:
+      name: my-api
+      labels:
+        name: myapp
+    spec:
+      containers:
+      - name: my-api
+        image: hamzanaser/api:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+          - containerPort: 5000

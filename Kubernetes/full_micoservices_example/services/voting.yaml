@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: voting
+spec:
+  type: NodePort
+  selector:
+    name: voting
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30000
