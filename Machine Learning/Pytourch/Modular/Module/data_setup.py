@@ -26,7 +26,7 @@ def data_installing(ROOT_PATH, DATA_FILE_ID = '1yIhmdZRwcvyWOl92PygSVGSualOxiwjg
 
 
 
-def data_loaders(ROOT_PATH,BATCH_SIZE, IMAGES_SIZE):
+def data_loaders(ROOT_PATH,BATCH_SIZE, IMAGES_SIZE,P):
 
     transform = Compose([
         Resize(IMAGES_SIZE),

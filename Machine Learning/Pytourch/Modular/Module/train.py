@@ -12,6 +12,7 @@ from utils import save_model
 
 
 def model_training(
+        P,
         EPOCHS,
         BATCH_SIZE,
         HIDDEN_UNITS,
@@ -23,7 +24,7 @@ def model_training(
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     device = torch.device('cpu')
 
-    train_data, test_data, class_names = data_loaders(ROOT_PATH=ROOT_PATH,BATCH_SIZE=BATCH_SIZE,IMAGES_SIZE=IMAGES_SIZE)
+    train_data, test_data, class_names = data_loaders(ROOT_PATH=ROOT_PATH,BATCH_SIZE=BATCH_SIZE,IMAGES_SIZE=IMAGES_SIZE,P=P)
 
     
     model = FullyDensed(HIDDEN_UNITS)
@@ -59,15 +60,20 @@ if __name__=='__main__':
 
     parser = argparse.ArgumentParser(description='Train a model with specified parameters.')
     
-    parser.add_argument('--epochs', type=int, default=3, help='Number of epochs')
-    parser.add_argument('--batch_size', type=int, default=32, help='Batch size')
-    parser.add_argument('--hidden_units', type=int, default=30, help='Number of hidden units')
-    parser.add_argument('--images_size', type=int, nargs=2, default=[300,300], help='Size of the images')
-    parser.add_argument('--model_name', type=str, default='Eff NetB0', help='Name of the model')
-    parser.add_argument('--root_path', type=str, default='/home/hamza/Desktop/Study-Notes/Machine Learning/Pytourch/Modular', help='Root path')
+
+    parser.add_argument('--P', type=int, default=15)
+
+    parser.add_argument('--epochs', type=int, default=3)
+    parser.add_argument('--batch_size', type=int, default=32)
+    parser.add_argument('--hidden_units', type=int, default=30)
+    parser.add_argument('--images_size', type=int, nargs=2, default=[300,300])
+    parser.add_argument('--model_name', type=str, default='Eff NetB0')
+    parser.add_argument('--root_path', type=str, default='/home/hamza/Desktop/Study-Notes/Machine Learning/Pytourch/Modular')
 
     args = parser.parse_args()
 
+
+    P = args.P
     EPOCHS = args.epochs
     BATCH_SIZE = args.batch_size
     HIDDEN_UNITS = args.hidden_units
@@ -77,6 +83,7 @@ if __name__=='__main__':
 
 
     model_training(
+        P,
         EPOCHS,
         BATCH_SIZE,
         HIDDEN_UNITS,

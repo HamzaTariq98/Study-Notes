@@ -32,50 +32,13 @@ def data_installing(ROOT_PATH, DATA_FILE_ID = '1yIhmdZRwcvyWOl92PygSVGSualOxiwjg
 
 
 
-class ImageSlicer:
-    def __init__(self,P,IMAGES_SIZE):
-        self.P = P
-        self.IMAGES_SIZE = IMAGES_SIZE
-
-    def __call__(self,img):
-     return image_slicer(img,self.P,self.IMAGES_SIZE)
-
-
-
-def image_slicer(img,P,IMAGES_SIZE):
-        img = np.array(img)
-        N = IMAGES_SIZE[0]**2//P**2
-        patches = []
-        for n in range(N):
-            x,y = divmod(n,IMAGES_SIZE[0]//P)
-
-
-            x_start = x*P
-            x_end = (x+1)*P
-            y_start = y*P
-            y_end = (y+1)*P
-            patch = img[x_start:x_end,y_start:y_end,:]
-            patch = torch.tensor(patch)
-            patch = patch.reshape(-1)
-            # print(patch)
-            # patch = torch.concatenate([patch,torch.tensor([x,y])])
-            patches.append(patch)
-
-        patches = torch.tensor(np.array(patches),dtype=torch.long)
-        return patches
-
-
-
 def data_loaders(ROOT_PATH,BATCH_SIZE, IMAGES_SIZE,P):
 
 
 
     transform = Compose([
         Resize(IMAGES_SIZE),
-        # ToTensor(),
-        # Normalize(mean=[0.485, 0.456, 0.406],
-        #                     std=[0.229, 0.224, 0.225]),
-        ImageSlicer(P,IMAGES_SIZE),
+        ToTensor(),
     ])
 
     train_data = ImageFolder(ROOT_PATH / 'Data' / 'Training_data',

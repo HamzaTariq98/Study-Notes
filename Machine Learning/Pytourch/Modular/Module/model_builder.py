@@ -7,11 +7,20 @@ class FullyDensed(Module):
     def __init__(self,HIDDEN_UNITS):
         super().__init__()
 
-        weights = torchvision.models.EfficientNet_V2_S_Weights.DEFAULT
-        model = torchvision.models.efficientnet_v2_s(weights=weights)
-        model.classifier[1] = nn.Linear(1280,10)
+        # weights = torchvision.models.EfficientNet_V2_S_Weights.DEFAULT
+        # model = torchvision.models.efficientnet_v2_s(weights=weights)
+        
+        # for param in model.features.parameters():
+        #    param.requires_grad = False
+        # model.classifier[1] = nn.Linear(1280,10)
+        
+        
+        weights = torchvision.models.EfficientNet_B0_Weights.DEFAULT
+        model = torchvision.models.efficientnet_b0(weights=weights)
+
         for param in model.features.parameters():
             param.requires_grad = False
+        model.classifier[1] = nn.Linear(1280,10)
 
 
         self.seq = Sequential(
