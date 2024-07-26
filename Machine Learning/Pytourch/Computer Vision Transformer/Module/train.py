@@ -37,13 +37,13 @@ def model_training(
     model = model.to(device)
 
 
-    # with torch.inference_mode():
-    #     output = model(sample[0][0:2])
+    with torch.inference_mode():
+        output = model(sample[0][0:2])
 
 
     print(model)
-
     return None
+
 
     loss_fn = torch.nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters())

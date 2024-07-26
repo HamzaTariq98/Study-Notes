@@ -47,6 +47,7 @@ def data_loaders(ROOT_PATH,BATCH_SIZE, IMAGES_SIZE,P):
     test_data = ImageFolder(ROOT_PATH / 'Data' / 'Test_data',
                             transform=transform)
 
+
     train_data_ = DataLoader(train_data,batch_size = BATCH_SIZE, shuffle=True, num_workers=num_workers)
     test_data_ = DataLoader(test_data, batch_size=BATCH_SIZE,num_workers=num_workers)
 
